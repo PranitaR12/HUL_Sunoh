@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Transcription and Translation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F5D1FA; /* Light purple background */
+            color: #000000; /* Black text */
+        }
+
+        .content {
+            max-width: 60%;
+            margin: 5% auto;
+            background: #ffffff; /* White content background */
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Box shadow */
+        }
+        h1 {
+            text-align: center;
+            color: #6a1b9a; /* Dark purple */
+            font-size: 40px;
+        }
+        h3{
+            text-align: center;
+            font-size: 20px
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        select, input[type="file"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #280137;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #560561;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Sunoh! ▷</h1>
+        <h3 class="subtitle">A tool for Transcription, Translation, and Summarisation powered by GPT-4</h3>
+        <form action="{{ base_url }}/" method="post" enctype="multipart/form-data">
+            <label for="source_language"><b>Source Language:</b></label>
+            <select name="source_language" id="source_language">
+            <option value="ar-EG">Arabic (Egypt)</option>
+            <option value="ar-SA">Arabic (Saudi Arabia)</option>
+            <option value="ar-DZ">Arabic (Algeria)</option>
+            <option value="ar-BH">Arabic (Bahrain)</option>
+            <option value="ar-IQ">Arabic (Iraq)</option>
+            <option value="ar-JO">Arabic (Jordan)</option>
+            <option value="ar-KW">Arabic (Kuwait)</option>
+            <option value="ar-LB">Arabic (Lebanon)</option>
+            <option value="ar-MA">Arabic (Morocco)</option>
+            <option value="ar-OM">Arabic (Oman)</option>
+            <option value="ar-QA">Arabic (Qatar)</option>
+            <option value="ar-SA">Arabic (Saudi Arabia)</option>
+            <option value="ar-TN">Arabic (Tunisia)</option>
+            <option value="ar-AE">Arabic (United Arab Emirates)</option>
+            <option value="ar-YE">Arabic (Yemen)</option>
+            <option value="bn-BD">Bangla (Bangladesh)</option>
+            <option value="bn-IN">Bangla (India)</option>
+            <option value="bg-BG">Bulgarian (Bulgaria)</option>
+            <option value="ca-ES">Catalan (Spain)</option>
+            <option value="zh-CN">Chinese (Mandarin, Simplified)</option>
+            <option value="zh-HK">Chinese (Cantonese, Traditional)</option>
+            <option value="zh-TW">Chinese (Taiwanese Mandarin, Traditional)</option>
+            <option value="hr-HR">Croatian (Croatia)</option>
+            <option value="cs-CZ">Czech (Czech Republic)</option>
+            <option value="da-DK">Danish (Denmark)</option>
+            <option value="nl-BE">Dutch (Belgium)</option>
+            <option value="nl-NL">Dutch (Netherlands)</option>
+            <option value="en-AU">English (Australia)</option>
+            <option value="en-CA">English (Canada)</option>
+            <option value="en-IN">English (India)</option>
+            <option value="en-IE">English (Ireland)</option>
+            <option value="en-NZ">English (New Zealand)</option>
+            <option value="en-PH">English (Philippines)</option>
+            <option value="en-SG">English (Singapore)</option>
+            <option value="en-ZA">English (South Africa)</option>
+            <option value="en-GB">English (United Kingdom)</option>
+            <option value="en-US">English (United States)</option>
+            <option value="et-EE">Estonian (Estonia)</option>
+            <option value="fi-FI">Finnish (Finland)</option>
+            <option value="fr-BE">French (Belgium)</option>
+            <option value="fr-CA">French (Canada)</option>
+            <option value="fr-FR">French (France)</option>
+            <option value="fr-CH">French (Switzerland)</option>
+            <option value="ka-GE">Georgian (Georgia)</option>
+            <option value="de-AT">German (Austria)</option>
+            <option value="de-DE">German (Germany)</option>
+            <option value="de-CH">German (Switzerland)</option>
+            <option value="el-GR">Greek (Greece)</option>
+            <option value="gu-IN">Gujarati (India)</option>
+            <option value="he-IL">Hebrew (Israel)</option>
+            <option value="hi-IN">Hindi (India)</option>
+            <option value="hu-HU">Hungarian (Hungary)</option>
+            <option value="is-IS">Icelandic (Iceland)</option>
+            <option value="id-ID">Indonesian (Indonesia)</option>
+            <option value="it-IT">Italian (Italy)</option>
+            <option value="ja-JP">Japanese (Japan)</option>
+            <option value="kn-IN">Kannada (India)</option>
+            <option value="kk-KZ">Kazakh (Kazakhstan)</option>
+            <option value="km-KH">Khmer (Cambodia)</option>
+            <option value="ko-KR">Korean (Korea)</option>
+            <option value="lv-LV">Latvian (Latvia)</option>
+            <option value="lt-LT">Lithuanian (Lithuania)</option>
+            <option value="mk-MK">Macedonian (North Macedonia)</option>
+            <option value="ms-MY">Malay (Malaysia)</option>
+            <option value="ml-IN">Malayalam (India)</option>
+            <option value="mr-IN">Marathi (India)</option>
+            <option value="no-NO">Norwegian (Bokmål, Norway)</option>
+            <option value="fa-IR">Persian (Iran)</option>
+            <option value="pl-PL">Polish (Poland)</option>
+            <option value="pt-BR">Portuguese (Brazil)</option>
+            <option value="pt-PT">Portuguese (Portugal)</option>
+            <option value="pa-IN">Punjabi (India)</option>
+            <option value="ro-RO">Romanian (Romania)</option>
+            <option value="ru-RU">Russian (Russia)</option>
+            <option value="sr-RS">Serbian (Serbia)</option>
+            <option value="si-LK">Sinhala (Sri Lanka)</option>
+            <option value="sk-SK">Slovak (Slovakia)</option>
+            <option value="sl-SI">Slovenian (Slovenia)</option>
+            <option value="es-AR">Spanish (Argentina)</option>
+            <option value="es-BO">Spanish (Bolivia)</option>
+            <option value="es-CL">Spanish (Chile)</option>
+            <option value="es-CO">Spanish (Colombia)</option>
+            <option value="es-CR">Spanish (Costa Rica)</option>
+            <option value="es-DO">Spanish (Dominican Republic)</option>
+            <option value="es-EC">Spanish (Ecuador)</option>
+            <option value="es-SV">Spanish (El Salvador)</option>
+            <option value="es-GT">Spanish (Guatemala)</option>
+            <option value="es-HN">Spanish (Honduras)</option>
+            <option value="es-MX">Spanish (Mexico)</option>
+            <option value="es-NI">Spanish (Nicaragua)</option>
+            <option value="es-PA">Spanish (Panama)</option>
+            <option value="es-PY">Spanish (Paraguay)</option>
+            <option value="es-PE">Spanish (Peru)</option>
+            <option value="es-PR">Spanish (Puerto Rico)</option>
+            <option value="es-ES">Spanish (Spain)</option>
+            <option value="es-US">Spanish (United States)</option>
+            <option value="es-UY">Spanish (Uruguay)</option>
+            <option value="es-VE">Spanish (Venezuela)</option>
+            <option value="sv-SE">Swedish (Sweden)</option>
+            <option value="ta-IN">Tamil (India)</option>
+            <option value="te-IN">Telugu (India)</option>
+            <option value="th-TH">Thai (Thailand)</option>
+            <option value="tr-TR">Turkish (Turkey)</option>
+            <option value="uk-UA">Ukrainian (Ukraine)</option>
+            <option value="ur-PK">Urdu (Pakistan)</option>
+            <option value="vi-VN">Vietnamese (Vietnam)</option>
+        </select>
+            <br><br>
+            <label for="target_language"><b>Target Language:</b></label>
+            <select name="target_language" id="target_language">
+                <option value="hi">Hindi</option>
+                <option value="en">English</option>
+                <option value="ta">Tamil</option>
+                <option value="mr">Marathi</option>
+            </select>
+            <br><br>
+            <label for="file"><b>Choose Audio File:</b></label>
+            <input type="file" name="file" id="file">
+            <br><br>
+            <input type="submit" value="Upload and Process">
+        </form>
+    </div>
+</body>
+</html>

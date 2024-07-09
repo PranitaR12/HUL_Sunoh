@@ -1,0 +1,94 @@
+2024-07-08 11:13:33,100 -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2024-07-08 11:13:33,106 -  * Restarting with stat
+2024-07-08 11:13:33,996 -  * Debugger is active!
+2024-07-08 11:13:33,996 -  * Debugger PIN: 796-125-962
+2024-07-08 11:13:45,153 - 127.0.0.1 - - [08/Jul/2024 11:13:45] "GET / HTTP/1.1" 200 -
+2024-07-08 11:13:48,970 - 127.0.0.1 - - [08/Jul/2024 11:13:48] "GET / HTTP/1.1" 200 -
+2024-07-08 11:16:14,894 - File uploaded: Standard recording 2 (1).wav
+2024-07-08 11:16:14,894 - File processed: Standard recording 2 (1).wav
+2024-07-08 11:16:14,894 - 127.0.0.1 - - [08/Jul/2024 11:16:14] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-07-08 11:16:14,941 - 127.0.0.1 - - [08/Jul/2024 11:16:14] "GET /success/Standard%20recording%202%20(1).wav HTTP/1.1" 200 -
+2024-07-08 11:17:27,658 - 127.0.0.1 - - [08/Jul/2024 11:17:27] "GET /summarize HTTP/1.1" 200 -
+2024-07-08 11:17:36,359 - 127.0.0.1 - - [08/Jul/2024 11:17:36] "POST /summarize HTTP/1.1" 200 -
+2024-07-08 11:21:36,803 - 127.0.0.1 - - [08/Jul/2024 11:21:36] "POST /summarize HTTP/1.1" 200 -
+2024-07-08 11:22:35,233 - 127.0.0.1 - - [08/Jul/2024 11:22:35] "POST /summarize HTTP/1.1" 200 -
+2024-07-08 11:22:37,052 - 127.0.0.1 - - [08/Jul/2024 11:22:37] "POST /summarize HTTP/1.1" 200 -
+2024-07-08 13:26:42,774 -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2024-07-08 13:26:42,779 -  * Restarting with stat
+2024-07-08 13:26:44,778 -  * Debugger is active!
+2024-07-08 13:26:44,793 -  * Debugger PIN: 796-125-962
+2024-07-08 13:26:44,793 - 127.0.0.1 - - [08/Jul/2024 13:26:44] "GET / HTTP/1.1" 200 -
+2024-07-08 13:29:12,795 - File uploaded: Standard recording 2 (1).wav
+2024-07-08 13:29:12,795 - File processed: Standard recording 2 (1).wav
+2024-07-08 13:29:12,795 - 127.0.0.1 - - [08/Jul/2024 13:29:12] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-07-08 13:29:12,807 - 127.0.0.1 - - [08/Jul/2024 13:29:12] "GET /success/Standard%20recording%202%20(1).wav HTTP/1.1" 200 -
+2024-07-08 13:29:15,600 - 127.0.0.1 - - [08/Jul/2024 13:29:15] "[31m[1mGET /summarize HTTP/1.1[0m" 405 -
+2024-07-08 13:36:59,246 -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2024-07-08 13:36:59,249 -  * Restarting with stat
+2024-07-08 13:37:00,130 -  * Debugger is active!
+2024-07-08 13:37:00,146 -  * Debugger PIN: 796-125-962
+2024-07-08 13:37:01,976 - 127.0.0.1 - - [08/Jul/2024 13:37:01] "GET /success/Standard%20recording%202%20(1).wav HTTP/1.1" 200 -
+2024-07-08 13:37:12,549 - 127.0.0.1 - - [08/Jul/2024 13:37:12] "GET /summarize HTTP/1.1" 200 -
+2024-07-08 13:41:07,850 - 127.0.0.1 - - [08/Jul/2024 13:41:07] "GET /summarize HTTP/1.1" 200 -
+2024-07-08 13:41:20,424 - 127.0.0.1 - - [08/Jul/2024 13:41:20] "POST /summarize HTTP/1.1" 200 -
+2024-07-08 13:41:35,423 - 127.0.0.1 - - [08/Jul/2024 13:41:35] "POST /summarize HTTP/1.1" 200 -
+2024-07-08 13:41:38,276 - 127.0.0.1 - - [08/Jul/2024 13:41:38] "[33mGET /None/download_prompt_response HTTP/1.1[0m" 404 -
+2024-07-08 13:44:35,655 - 127.0.0.1 - - [08/Jul/2024 13:44:35] "[33mGET /None/download_prompt_response HTTP/1.1[0m" 404 -
+2024-07-08 13:44:38,020 - 127.0.0.1 - - [08/Jul/2024 13:44:38] "[33mGET /None/download_prompt_response HTTP/1.1[0m" 404 -
+2024-07-08 13:44:45,280 - 127.0.0.1 - - [08/Jul/2024 13:44:45] "[33mGET /None/download_prompt_response HTTP/1.1[0m" 404 -
+2024-07-08 13:45:18,212 -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2024-07-08 13:45:18,217 -  * Restarting with stat
+2024-07-08 13:45:20,281 -  * Debugger is active!
+2024-07-08 13:45:20,281 -  * Debugger PIN: 796-125-962
+2024-07-08 13:45:24,521 - 127.0.0.1 - - [08/Jul/2024 13:45:24] "GET /summarize HTTP/1.1" 200 -
+2024-07-08 13:45:31,149 - 127.0.0.1 - - [08/Jul/2024 13:45:31] "GET /summarize HTTP/1.1" 200 -
+2024-07-08 13:45:39,059 - 127.0.0.1 - - [08/Jul/2024 13:45:39] "[35m[1mPOST /summarize HTTP/1.1[0m" 500 -
+2024-07-08 13:45:39,206 - 127.0.0.1 - - [08/Jul/2024 13:45:39] "[36mGET /summarize?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-07-08 13:45:39,531 - 127.0.0.1 - - [08/Jul/2024 13:45:39] "GET /summarize?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-07-08 13:45:39,802 - 127.0.0.1 - - [08/Jul/2024 13:45:39] "[36mGET /summarize?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-07-08 13:45:40,189 - 127.0.0.1 - - [08/Jul/2024 13:45:40] "[36mGET /summarize?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-07-08 13:46:36,229 -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2024-07-08 13:46:36,244 -  * Restarting with stat
+2024-07-08 13:46:38,184 -  * Debugger is active!
+2024-07-08 13:46:38,184 -  * Debugger PIN: 796-125-962
+2024-07-08 13:46:44,134 - 127.0.0.1 - - [08/Jul/2024 13:46:44] "GET /summarize HTTP/1.1" 200 -
+2024-07-08 13:46:55,240 - 127.0.0.1 - - [08/Jul/2024 13:46:55] "POST /summarize HTTP/1.1" 200 -
+2024-07-08 13:46:56,993 - 127.0.0.1 - - [08/Jul/2024 13:46:56] "[33mGET /None/download_prompt_response HTTP/1.1[0m" 404 -
+2024-07-08 13:47:48,085 - 127.0.0.1 - - [08/Jul/2024 13:47:48] "GET /download_prompt_response HTTP/1.1" 200 -
+2024-07-08 13:49:13,337 - 127.0.0.1 - - [08/Jul/2024 13:49:13] "POST /summarize HTTP/1.1" 200 -
+2024-07-08 13:49:40,137 - 127.0.0.1 - - [08/Jul/2024 13:49:40] "POST /summarize HTTP/1.1" 200 -
+2024-07-08 13:49:44,905 - 127.0.0.1 - - [08/Jul/2024 13:49:44] "GET /download_summary HTTP/1.1" 200 -
+2024-07-08 13:51:48,344 - 127.0.0.1 - - [08/Jul/2024 13:51:48] "POST /summarize HTTP/1.1" 200 -
+2024-07-08 16:12:44,920 -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2024-07-08 16:12:44,929 -  * Restarting with stat
+2024-07-08 16:12:47,128 -  * Debugger is active!
+2024-07-08 16:12:47,149 -  * Debugger PIN: 796-125-962
+2024-07-08 16:12:47,285 - 127.0.0.1 - - [08/Jul/2024 16:12:47] "GET / HTTP/1.1" 200 -
+2024-07-08 16:15:17,335 - File uploaded: Standard recording 2 (1).wav
+2024-07-08 16:15:17,351 - File processed: Standard recording 2 (1).wav
+2024-07-08 16:15:17,382 - 127.0.0.1 - - [08/Jul/2024 16:15:17] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-07-08 16:15:17,744 - 127.0.0.1 - - [08/Jul/2024 16:15:17] "GET /success/Standard%20recording%202%20(1).wav HTTP/1.1" 200 -
+2024-07-08 16:25:58,097 - 127.0.0.1 - - [08/Jul/2024 16:25:58] "GET /summarize HTTP/1.1" 200 -
+2024-07-08 16:27:58,896 - 127.0.0.1 - - [08/Jul/2024 16:27:58] "POST /summarize HTTP/1.1" 200 -
+2024-07-08 16:28:08,802 - 127.0.0.1 - - [08/Jul/2024 16:28:08] "GET /download_prompt_response HTTP/1.1" 200 -
+2024-07-08 16:30:35,459 - 127.0.0.1 - - [08/Jul/2024 16:30:35] "POST /summarize HTTP/1.1" 200 -
+2024-07-08 16:30:51,459 - 127.0.0.1 - - [08/Jul/2024 16:30:51] "GET /download_prompt_response HTTP/1.1" 200 -
+2024-07-08 16:34:09,200 - 127.0.0.1 - - [08/Jul/2024 16:34:09] "POST /summarize HTTP/1.1" 200 -
+2024-07-08 16:34:51,116 - 127.0.0.1 - - [08/Jul/2024 16:34:51] "GET /download_prompt_response HTTP/1.1" 200 -
+2024-07-08 16:36:16,244 - 127.0.0.1 - - [08/Jul/2024 16:36:16] "POST /summarize HTTP/1.1" 200 -
+2024-07-08 16:38:15,219 - 127.0.0.1 - - [08/Jul/2024 16:38:15] "POST /summarize HTTP/1.1" 200 -
+2024-07-08 16:38:18,948 - 127.0.0.1 - - [08/Jul/2024 16:38:18] "GET /download_prompt_response HTTP/1.1" 200 -
+2024-07-08 16:39:07,544 -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2024-07-08 16:39:07,548 -  * Restarting with stat
+2024-07-08 16:39:09,989 -  * Debugger is active!
+2024-07-08 16:39:09,989 -  * Debugger PIN: 796-125-962
+2024-07-08 16:39:22,563 - 127.0.0.1 - - [08/Jul/2024 16:39:22] "GET /summarize HTTP/1.1" 200 -
+2024-07-08 16:40:20,454 - 127.0.0.1 - - [08/Jul/2024 16:40:20] "GET /summarize HTTP/1.1" 200 -
+2024-07-08 16:42:21,909 - 127.0.0.1 - - [08/Jul/2024 16:42:21] "POST /summarize HTTP/1.1" 200 -
+2024-07-08 16:44:22,552 - 127.0.0.1 - - [08/Jul/2024 16:44:22] "POST /summarize HTTP/1.1" 200 -
+2024-07-08 16:44:28,399 - 127.0.0.1 - - [08/Jul/2024 16:44:28] "GET /download_prompt_response HTTP/1.1" 200 -
+2024-07-09 12:39:35,958 -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2024-07-09 12:39:35,963 -  * Restarting with stat
+2024-07-09 12:39:37,827 -  * Debugger is active!
+2024-07-09 12:39:37,827 -  * Debugger PIN: 796-125-962
+2024-07-09 13:05:09,323 - 127.0.0.1 - - [09/Jul/2024 13:05:09] "POST /summarize HTTP/1.1" 200 -

@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[[source]]
+url = "https://datalab-python:h5cbetpsddtzhjclwhke3a3id6zm2tmwv6xchzvrocux2m5u5tuq@pkgs.dev.azure.com/bnlwe-d-57280-bigdata-01-unilevercom-vsts/bnlwe-d-57280-bigdata-vstsp/_packaging/datalab-python%40Local/pypi/simple/"
+verify_ssl = true
+name = "datalab"
+
+[packages]
+flask = "*"
+azure-cognitiveservices-speech = "*"
+azure-ai-textanalytics = "*"
+datalab-sdk = {version="*", index="datalab"}  # Adding datalab-sdk package
+
+[dev-packages]
+pytest = "*"
+
+[requires]
+python_version = "3.8.3"

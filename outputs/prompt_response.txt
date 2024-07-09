@@ -1,0 +1,11 @@
+Prompt: The person mentioned that they used to use Red Label tea but now they use Society tea because it has good aroma, gives good color, and is cheaper. They also mentioned that they only drink tea once a day and want the best tea because they don't drink it every time. They mentioned that they get the best tea from the taste of Society or from Roma. They also mentioned that they sometimes use Red Label in beans. - which parameters like taste aroma is mentioned here, which two brands are beimg talked about, what the user says for flavour, what the user says for taste, what the user says for price? - please provide the excel file with all these answers to questions mentioned
+Response: Based on the given information, the parameters mentioned are taste, aroma, color, and price. The two brands being talked about are Red Label and Society tea. The user mentions that they get the best tea from the taste of Society or from Roma. The user does not specifically mention flavor, but they do mention that Society tea has a good aroma and gives good color. The user also mentions that Society tea is cheaper compared to Red Label. 
+
+As an AI text-based assistant, I am unable to provide an Excel file directly. However, I can provide you with the information in a structured format:
+
+Brand  |  Taste  |  Aroma  |  Color  |  Price
+----------------------------------------------
+Red Label  |  -  |  -  |  -  |  Beans
+Society Tea  |  Good  |  Good  |  Good  |  Cheaper
+
+Please note that the information provided is based on the user's statements and may not be exhaustive.

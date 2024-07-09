@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5D1FA;
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            color: #333333;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            max-width: 600px;
+        }
+        p {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #280137;
+            color: #ffffff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #560561;
+        }
+        input[type="text"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #280137;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #560561;
+        }
+
+        .prompt-box{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Summary</h1>
+        <p>{{ summary }}</p>
+        
+        <h2>Ask a question based on the translated text</h2>
+        <h5>(You need to copy paste the summary in the textbox to ask the questions based on the summary)
+        <form action="{{ url_for('summarize') }}" method="post">
+            <input type="text" name="prompt" placeholder="Enter your prompt" required>
+            <input type="submit" value="Get Answer">
+        </form>
+        
+        {% if prompt_response %}
+        <h2>Response</h2>
+        <div class="prompt-box">{{ prompt_response }}</div>
+        <a href="{{ url_for('download_summary') }}">Download Summary</a>
+        <a class="download-link" href="{{ base_url }}/download_prompt_response">Download Responses</a>
+        {% endif %}
+        <a href="{{ url_for('index') }}">Back to Home</a>
+    </div>
+</body>
+</html>
